@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 07</title>
+</head>
+<body>
+    <h1>
+        Valores de peças - Questão 07
+    </h1>
+    <script>
+        var peca1 = Number(prompt("Informe o código da peça 1: "));
+        var qtdPeca1= Number(prompt("Informe a quantidade de peças 1: "));
+        var valorUnitarioPeca1 = Number(prompt("Informe o valor unitário de cada peça 1: "));
+
+        var peca2 = Number(prompt("Informe o código da peça 2: "));
+        var qtdPeca2= Number(prompt("Informe a quantidade de peças 2: "));
+        var valorUnitarioPeca2 = Number(prompt("Informe o valor unitário de cada peça 2: "));
+        
+        var valorPago = (qtdPeca1 * valorUnitarioPeca1) + (qtdPeca2 * valorUnitarioPeca1);
+
+        document.write("O valor a ser pago é: " + valorPago);
+    </script>
+</body>
+</html>

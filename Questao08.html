@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 08</title>
+</head>
+<body>
+    <h1>
+        Áreas - Questão 08
+    </h1>
+    <script>
+        var a = Number(prompt("Informe o número 1: "));
+        var b = Number(prompt("Informe o número 2: "));
+        var c = Number(prompt("Informe o número 3: "));
+
+        var areaTriangulo = (a * c) / 2;
+        var areaCirculo = Math.PI * Math.pow(c, 2);
+        var areaTrapezio = ((a * b) * c)/2;
+        var areaQuadrado = Math.pow(b, 2);
+        var areaRetangulo = a * b;
+
+        document.write("A: " + a + " B: " + b + " C: " + c);
+        document.write('<br>')
+        
+        document.write("A área do triângulo retângulo é: " + areaTriangulo);
+        document.write('<br>');
+        document.write("A área do círculo é: " + areaCirculo);
+        document.write('<br>');
+        document.write("A área do trapézio é: " + areaTrapezio);
+        document.write('<br>');
+        document.write("A área do quadrado é: " + areaQuadrado);
+        document.write('<br>');
+        document.write("A área do retângulo é: " + areaRetangulo);
+    </script>
+</body>
+</html>
