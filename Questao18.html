@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 18</title>
+</head>
+<body>
+    <h1>
+        Questão 18 - Estruturas condicionais
+    </h1>
+    <p>
+        O IMC - Índice de Massa Corporal é um critério da Organização Mundial de Saúde para
+        <br>
+        dar uma indicação sobre a condição de peso de uma pessoa adulta. A fórmula é IMC = peso / (altura). Elabore um script que leia o peso e a altura deum adulto e mostre sua condição de acordo com a tabela abaixo.
+        <br>
+        IMC em adultos - Condição <br>
+        Abaixo de 18,5 - Abaixo do peso <br>
+        Entre 18,5 e 25 - Peso normal <br>
+        Entre 25 e 30 - Acima do peso <br>
+        Acima de 30 - Obeso
+    </p>
+    <script>
+        var alt = Number(prompt("Informe a sua altura: "));
+        var peso = Number(prompt("Informe seu peso: "));
+
+        imc = peso / (alt * alt);
+
+        if(imc < 18.5){
+            var condicao = "Abaixo do peso";
+        } else if (imc >= 18.5 && imc < 25){
+            var condicao = "Peso normal";
+        } else if (imc >= 25 && imc < 30){
+            var condicao = "Acima do peso";
+        } else {
+            var condicao = "Obeso";
+        }
+
+        document.write("A condição dessa pessoa é: " + condicao);
+
+        //Abaixo de 18,5 = Abaixo do peso
+        //Entre 18,5 e 25 = Peso normal
+        //Entre 25 e 30 = Acima do peso
+        // Acima de 30 = Obeso
+    </script>
+</body>
+</html>

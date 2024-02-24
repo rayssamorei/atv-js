@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 17</title>
+</head>
+<body>
+    <h1>
+        Questão 17 - Estruturas condicionais
+    </h1>
+    <p>
+        Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um scriptque calcule seu peso ideal, utilizando as seguintes fórmulas:
+
+        para homens: (72.7* h) -58;
+
+        para mulheres: (62.1* h)-44.7
+    </p>
+    <script>
+        var altura = Number(prompt("Informe a sua altura: "));
+        var sexo = prompt("Informe o seu sexo: (F - feminino e M - Masculino) ");
+
+        if(sexo == "f" || sexo == "F"){
+            var pesoIdeal = Number((62.1 * altura) - 58);
+            document.write("Peso ideal: " + pesoIdeal.toFixed(1));
+        } else if( sexo == "m" || sexo == "M"){
+            var pesoIdeal = Number((72.7 * altura) - 44.7);
+            document.write("Peso ideal: " + pesoIdeal.toFixed(1));
+        } else {
+            document.write("Sexo inválido!")
+        }
+
+    </script>
+</body>
+</html>

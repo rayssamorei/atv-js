@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 15</title>
+</head>
+<body>
+    <h1>
+        Questão 15 - Estruturas condicionais
+    </h1>
+    <p>
+        Encontrar o dobro de um número caso ele seja positivo e o seu triplo caso seja
+        negativo, imprimindo o resultado.
+    </p>
+    <script>
+        var n1 = Number(prompt("Informe o valor: "));
+
+        if(n1 < 0){
+            var res = Number(n1 * 3);
+            document.write("O número é negativo! Seu triplo é: " + res);
+        } else {
+            var res = Number(n1 * 2);
+            document.write("O número é positivo! Seu dobro é: " + res);
+        }
+    </script>
+</body>
+</html>
