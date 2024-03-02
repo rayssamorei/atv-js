@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+<body>
+    <script>
+        var renda = Number(prompt("Informe sua renda para saber o seu IR: "));
+        var impostoRenda;
+        if(renda <= 1.90398){
+            impostoRenda = Number(0);
+        } else if (renda >= 1.90399 && renda <= 2.82665){
+            impostoRenda = Number(0.075);
+        } else if (renda >= 2.82666 && renda <= 3.75105){
+            impostoRenda = Number(0.15);
+        } else if (renda >= 3.75106 && renda <= 4.66468){
+            impostoRenda = Number(0.225);
+        } else {
+            impostoRenda = Number(0.275);
+        }
+        var valorPago = renda * impostoRenda;
+        
+        document.write("O valor a ser pago é: " + valorPago.toFixed(1));
+    </script>
+</body>
+</html>

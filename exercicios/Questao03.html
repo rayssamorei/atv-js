@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03</title>
+</head>
+<body>
+    <h1>
+        Calculadora Básica
+    </h1>
+    <script>
+        var num1 = Number(prompt("Informe o primeiro valor: "));
+        var num2 = Number(prompt("Informe o segundo número: "));
+        var operador = prompt("Informe um operador para realizar a operação desejada: (+, -, *, /) ");
+
+        switch (operador) {
+            case "+":
+                var resultado = num1 + num2;
+                document.write("O resultado da soma é: " + resultado);
+                break;
+            case "-":
+                var resultado = num1 - num2;
+                document.write("O resultado da subtração é: " + resultado);
+                break;
+            case "*":
+                var resultado = num1 * num2;
+                document.write("O resultado da multiplicação é: " + resultado);
+                break;
+            case "/":
+                var resultado = num1 / num2;
+                document.write("O resultado da divisão é: " + resultado);
+                break;
+            default:
+                break;
+        }
+    </script>
+</body>
+</html>

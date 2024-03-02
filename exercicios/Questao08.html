@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 08</title>
+</head>
+<body>
+    <h1>
+        Estações do ano
+    </h1>
+    <script>
+        var mes = Number(prompt("Informe o número do mês para saber a estação: "));
+        var estacao;
+        if (mes == 12 || mes == 1 || mes == 2){
+            estacao = "Verão";
+        } else if (mes == 3 || mes == 4 || mes == 5){
+            estacao = "Outono";
+        } else if(mes == 6 || mes == 7 || mes == 8){
+            estacao = "Inverno";
+        } else if(mes == 9 || mes == 10 || mes == 11){
+            estacao = "Primavera";
+        }
+
+        document.write("A estação desse mês é: " + estacao);
+    </script>
+</body>
+</html>

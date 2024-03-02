@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 10</title>
+</head>
+<body>
+    <script>
+        var nota = Number(prompt("Informe sua nota(1-100): "));
+        var classificacao;
+
+        if(nota >= 90){
+            classificacao = "Excelente";
+        } else if (nota >= 70 && nota < 90){
+            classificacao = "Bom";
+        } else if(nota >= 50 && nota < 70){
+            classificacao = "Regular";
+        } else {
+            classificacao = "Insuficiente";
+        }
+
+        document.write("Sua classificação com base em sua nota é: " + classificacao);
+    </script>
+</body>
+</html>

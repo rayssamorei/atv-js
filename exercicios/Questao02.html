@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+<body>
+    <script>
+        var idade = Number(prompt("Informe a idade da criança: "));
+        if(idade <= 12){
+            var classificacao = "Criança";
+        } else if(idade > 12 && idade <= 18){
+            var classificacao = "Adolescente";
+        } else if(idade < 18 && idade <= 60){
+            var classificacao = "Adulto";
+        } else {
+            var classificacao = "Idoso";
+        }
+
+        document.write("A classificação da sua idade é a seguinte: " + classificacao);
+    </script>
+</body>
+</html>

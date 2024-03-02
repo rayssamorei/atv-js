@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 07</title>
+</head>
+<body>
+    <h1>
+        Sinal de Trânsito
+    </h1>
+    <script>
+        var corSinal = prompt("Informe a cor do sinal de trânsito: ");
+
+        if(corSinal == "verde" || corSinal == "Verde"){
+            document.write("Pode passar")
+        } else if(corSinal =="amarelo" || corSinal =="Amarelo"){
+            document.write("Atenção");
+        } else if (corSinal == "vermelho" || corSinal == "Vermelho"){
+            document.write("Pare");
+        } else {
+            document.write("Cor inválida");
+        }
+    </script>
+</body>
+</html>
