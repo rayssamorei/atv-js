@@ -15,11 +15,13 @@
         if(valor <= 100){
             desconto = 0;
         } else if (valor > 100 && valor <= 500){
-            desconto = 1.1;
+            desconto = 0.1;
         } else {
-            desconto = 1.15;
+            desconto = 0.15;
         }
-        document.write("O valor final é: " + valor * desconto.toFixed(1));
+
+        desconto =  valor - (valor * desconto);
+        document.write("O valor final é: " +  desconto.toFixed(1));
     </script>
 </body>
 </html>
