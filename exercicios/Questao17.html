@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 17</title>
+</head>
+<body>
+    <script>
+        var qtdConsumido = Number(prompt("Informe a quantidade de kWh consumidas: "));
+        if(qtdConsumido <= 100){
+            var valor = 50;
+        } else{
+            var valor = 50 + qtdConsumido * 1.50;
+        }
+
+        document.write("O valor a ser pago é: " + valor);
+    </script>
+</body>
+</html>

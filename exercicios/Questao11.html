@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 11</title>
+</head>
+<body>
+    <script>
+        var velocidade = Number(prompt("Informe a velocidade percorrida: "));
+        var multa;
+
+        if(velocidade > 60){
+            if(velocidade <= 80){
+                multa = 50.00;
+            } else if(velocidade >= 81 && velocidade <= 120){
+                multa = 100.00;
+            } else if(velocidade > 120){
+                multa = 200.00;
+            }
+        } else {
+            document.write("Não recebe multa.")
+        }
+
+        document.write("O valor da multa é: R$" + multa)
+    </script>
+</body>
+</html>

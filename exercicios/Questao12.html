@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 12</title>
+</head>
+<body>
+    <script>
+        var sal = Number(prompt("Informe seu salário: "));
+        var anos = Number(prompt("Informe seu tempo na empresa(em anos): "));
+        var bonus;
+        
+        if(anos > 5){
+            bonus = sal * 0.2;
+        } else {
+            bonus = sal * 0.1;
+        }
+
+        document.write("O valor a ser recebido de bonus é: " + bonus);
+    </script>
+</body>
+</html>
