@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+
+<body>
+    <script>
+        //Faça um algoritmo que leia 20 números e, ao final, escreva quantos estão entre 0 e 100, quantos estão entre 101 e 200 e quantos são maiores de 200.
+
+        let numero = 0;
+        let numeros0E100 = 0;
+        let numeros101E200 = 0;
+        let numerosMaior200 = 0;
+
+        for(let i = 1; i <= 20; i++){
+            numero = Number(prompt("Informe o " + i + " número: "));
+            if(numero > 0 && numero < 100){
+                numeros0E100++;
+            } else if (numero > 100 && numero < 200){
+                numeros101E200++;
+            } else {
+                numerosMaior200++;
+            }
+        }
+
+        document.write("Quantidade entre 0 e 100: " + numeros0E100);
+        document.write('<br>');
+        document.write("Quantidade entre 101 e 200: " + numeros101E200);
+        document.write('<br>');
+        document.write("Quantidade maior que 200: " + numerosMaior200);
+        document.write('<br>');
+    </script>
+</body>
+</html>

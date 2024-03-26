@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 05</title>
+</head>
+<body>
+    <script>
+        //Faça um programa que receba a idade de 15 pessoas e que calcule e mostre:
+        //a) A quantidade de pessoas em cada faixa etária;
+        //b) A percentagem de pessoas na primeira e na última faixa etária, com relação ao total de pessoas:
+        //Até 15 anos
+        //De 16 a 30 anos
+        //De 31 a 45 anos
+        //De 46 a 60 anos
+        //Acima de 61 anos
+
+        let idade = 0;
+        let qtd15 = 0;
+        let qtd16E30 = 0;
+        let qtd31E45 = 0;
+        let qtd46E60 = 0;
+        let qtd61 = 0;
+
+        for(let i = 1; i < 15; i++){
+            idade = Number(prompt("Informe a idade da pessoa: " + i));
+            if(idade <= 15){
+                qtd15++;
+            } else if(idade >= 16 && idade <= 30){
+                qtd16E30++;
+            } else if(idade >= 31 && idade <= 45){
+                qtd31E45++;
+            } else if(idade >= 46 && idade <= 60){
+                qtd46E60++;
+            } else {
+                qtd61++;
+            }
+        }
+
+    </script>
+</body>
+</html>
